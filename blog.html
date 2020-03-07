@@ -23,9 +23,9 @@
                     <li><a href="">About</a></li>
                     <li><a href="">Recipes</a></li>
                     <li><a href="">Nutrition</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="">Shop</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
                 </ul>
@@ -110,7 +110,7 @@
 
         <section class="related-posts">
             <h4>RELATED POSTS</h4>
-            <div>
+            <div class="related-posts-all">
                 <div class="post-one">
                     <figure>
                         <img src="./styles/delicious-assets/blog-3.jpeg"
@@ -146,30 +146,63 @@
                 <figure>
                     <img src="./styles/delicious-assets/blog-6.jpeg" alt="portrait of smiling old woman">
                 </figure>
-                <p><span>Lucatony Avaro</span> - Web Developer</p>
-                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
-                    bitterleaf wattle seed
-                    collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout
-                    chard.</p>
-                <p>July 17, 2015 at 15 hours ago</p>
+                <article>
+                    <span class="tip"></span>
+                    <p><span class="comments-name">Lucatony Avaro</span> - Web Developer</p>
+                    <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
+                        bitterleaf wattle seed
+                        collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout
+                        chard.</p>
+                    <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                </article>
             </div>
             <div>
                 <figure>
                     <img src="./styles/delicious-assets/blog-7.jpeg"
                         alt="portrait of a young blond woman in a hat looking to the right">
                 </figure>
-                <p><span>Brian Hudson</span> - Web Developer</p>
-                <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava
-                    bean mustard
-                    tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea.
-                    Grape silver beet
-                    watercress potato tigernut corn groundnut.</p>
-                <p>July 17, 2015 at 15 hours ago</p>
+                <article>
+                    <span class="tip"></span>
+                    <p><span class="comments-name">Brian Hudson</span> - Web Developer</p>
+                    <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn
+                        fava
+                        bean mustard
+                        tigernut jícama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea.
+                        Grape silver beet
+                        watercress potato tigernut corn groundnut.</p>
+                    <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                </article>
             </div>
+        </section>
+
+        <section class="comments-form">
+            <h4>LEAVE A COMMENT</h4>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <form action="">
+                <fieldset>
+                    <legend class="visually-hidden"></legend>
+
+                    <label for="name" class="visually-hidden"></label>
+                    <input type="text" name="name" class="name" id="name" placeholder="Name *" required="true">
+
+                    <label for="email" class="visually-hidden"></label>
+                    <input type="email" name="email" class="email" id="email" placeholder="Email *" required="true">
+
+                    <label for="website" class="visually-hidden"></label>
+                    <input type="text" name="website" class="website" id="website" placeholder="Your Website">
+
+                    <label for="comment" class="visually-hidden"></label>
+                    <textarea name="comment" class="comment" id="comment" maxlength="1500" rows="15"
+                        placeholder="Comment"></textarea>
+
+                </fieldset>
+
+                <button type="submit"><a href="www.noonereallycares.com">SUBMIT COMMENT</a></button>
+            </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer-blog">
         <div class="wrapper">
             <div class="footer-info">
                 <div>

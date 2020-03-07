@@ -235,6 +235,18 @@ html {
   overflow: hidden;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
 html {
   font-size: 62.5%;
 }
@@ -471,7 +483,7 @@ footer label {
   display: none;
 }
 
-input[type="email"] {
+footer input[type="email"] {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80%;
           flex: 0 0 80%;
@@ -522,6 +534,11 @@ button .fas {
 
 .copyright a {
   color: #65A605;
+}
+
+.footer-blog p:only-of-type,
+.footer-blog .social-links {
+  visibility: hidden;
 }
 
 .recipes {
@@ -835,7 +852,7 @@ blockquote:after {
   color: #333333;
 }
 
-.related-posts div {
+.related-posts-all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,15 +860,6 @@ blockquote:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 3rem;
-}
-
-.post-one,
-.post-two,
-.post-three {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .related-posts h3 {
@@ -866,4 +874,153 @@ blockquote:after {
 .related-posts a {
   color: #2E2E2E;
   font-family: 'Raleway', 'sans-serif';
+}
+
+.comments div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.comments figure {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 7%;
+          flex: 0 0 7%;
+}
+
+.comments article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 1rem 2rem;
+}
+
+.comments article p {
+  color: #2E2E2E;
+  font-size: 1.3rem;
+}
+
+.comments-name,
+.date {
+  font-weight: bold;
+  color: #333333;
+}
+
+.comments-name {
+  font-size: 1.5rem;
+}
+
+.date {
+  font-size: 1.2rem;
+}
+
+.tip {
+  top: 20px;
+  left: -20px;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #F6F6F6;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.comments-form {
+  margin: 4rem 0 20rem;
+}
+
+.comments-form p {
+  font-family: 'Lora', 'sans-serif';
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+.comments-form fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.comments-form input[class="name"],
+.comments-form input[class="email"],
+.comments-form input[class="website"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  height: 5rem;
+  padding-left: 1rem;
+  border-color: rgba(153, 153, 153, 0.3);
+}
+
+.comments-form textarea {
+  margin: 1rem 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  resize: vertical;
+  min-width: 100%;
+  resize: none;
+  padding: 2rem 1rem;
+  border-color: rgba(153, 153, 153, 0.3);
+}
+
+.comments-form ::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.comments-form :-ms-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.comments-form ::-ms-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.comments-form ::placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.comments-form button {
+  background-color: #65A605;
+  border: none;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
 }
