@@ -354,7 +354,12 @@ header {
 }
 
 .header-blog {
-  background-image: url(./delicious-assets/blog-1.jpeg);
+  background-image: url(../styles/delicious-assets/blog-1.jpeg);
+  height: 50vh;
+}
+
+.header-contact {
+  background-image: url(../styles/delicious-assets/contact-1.jpeg);
   height: 50vh;
 }
 
@@ -1023,4 +1028,174 @@ blockquote:after {
   border: none;
   padding: 2rem 3rem;
   font-size: 1.5rem;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 10rem 0;
+}
+
+.contact {
+  position: relative;
+  height: 80vh;
+}
+
+.contact-form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 63%;
+          flex: 0 0 63%;
+  display: inline-block;
+  padding: 0;
+}
+
+.contact-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.contact-form input[class="name"],
+.contact-form input[class="email"],
+.contact-form input[class="subject"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  margin-top: 2rem;
+  height: 5rem;
+  padding: 2rem 1rem;
+  background-color: #F6F6F6;
+  border: none;
+}
+
+.contact-form input[class="subject"] {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.contact-form textarea {
+  margin: 2rem 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  resize: vertical;
+  min-width: 100%;
+  resize: none;
+  padding: 2rem 1rem;
+  background-color: #F6F6F6;
+  border: none;
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Lora', 'sans-serif';
+}
+
+.contact-form :-ms-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Lora', 'sans-serif';
+}
+
+.contact-form ::-ms-input-placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Lora', 'sans-serif';
+}
+
+.contact-form ::placeholder {
+  color: #999999;
+  font-size: 1.6rem;
+  font-family: 'Lora', 'sans-serif';
+}
+
+.contact-form button {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.contact-form button a {
+  color: #65A605;
+  font-size: 1.4rem;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.contact-form button i {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  padding-left: 5px;
+}
+
+.contact-details {
+  width: 37%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #F2F2F2;
+  padding: 10rem 20rem 10rem 3rem;
+}
+
+.contact h3 {
+  font-size: 2.4rem;
+}
+
+.contact-details-info p {
+  padding: 2rem 0 4rem;
+}
+
+.contact-working-hours {
+  padding-bottom: 4rem;
+}
+
+.contact-working-hours h4 {
+  padding-bottom: 2rem;
+}
+
+.contact-working-hours p:nth-last-child(2) {
+  margin: 0;
+}
+
+.contact-working-hours span {
+  color: #333333;
+}
+
+.contact-working-hours p:last-child {
+  margin-top: 0;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.contact-info p {
+  padding: 0.5rem 0;
+}
+
+.banner {
+  display: block;
+  background-image: url(../styles/delicious-assets/contact-2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
 }
