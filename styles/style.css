@@ -340,7 +340,7 @@ p {
 }
 
 header {
-  background-image: url(./delicious-assets/home-1.jpeg);
+  background-image: url(../styles/delicious-assets/home-1.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -388,6 +388,10 @@ header a {
   color: #333333;
 }
 
+header a.active {
+  color: #65A605;
+}
+
 .header-circle {
   position: absolute;
   right: 0;
@@ -429,12 +433,14 @@ footer {
   background-color: #333333;
 }
 
-footer h1 {
+footer h2 {
   color: #65A605;
   margin: 0 0 3.5rem;
   text-align: left;
   font-weight: normal;
   font-size: 32px;
+  margin: 0;
+  padding-bottom: 2.5rem;
 }
 
 footer p {
@@ -471,8 +477,7 @@ footer p {
   border-bottom: 1px solid rgba(153, 153, 153, 0.3);
 }
 
-.footer-info div p:last-child,
-.footer-info div:nth-last-child(1) p {
+.footer-info .no-border {
   border-bottom: none;
 }
 
@@ -541,7 +546,7 @@ button .fas {
   color: #65A605;
 }
 
-.footer-blog .footer-info p:only-of-type,
+.footer-blog .footer-info .no-border:nth-child(2n),
 .footer-blog .footer-info .social-links {
   visibility: hidden;
 }
@@ -697,9 +702,11 @@ button .fas {
 }
 
 .gallery img {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 3 400px;
-          flex: 3 3 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 /* reviews section starts here */
@@ -782,6 +789,13 @@ blockquote:after {
 
 .blog {
   margin: 20rem 0 5rem;
+}
+
+.blog p,
+.personal p,
+.related-posts p,
+.comments p {
+  font-size: 1.4rem;
 }
 
 .blog h2 {
@@ -1152,7 +1166,7 @@ blockquote:after {
 }
 
 .contact-form button {
-  background-color: #FFFFFF;
+  background-color: #F6F6F6;
   border: none;
 }
 
@@ -1174,7 +1188,7 @@ blockquote:after {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #F2F2F2;
+  background-color: #F6F6F6;
   padding: 10rem 20rem 10rem 3rem;
 }
 
@@ -1423,4 +1437,73 @@ blockquote:after {
   .restaurant-pic img {
     width: 250px;
   }
+}
+
+header a:hover {
+  color: #65A605;
+}
+
+.button:hover {
+  color: #65A605;
+  background-color: #F6F6F6;
+  border: 1px solid #65A605;
+}
+
+.recipes-links li:hover i {
+  color: #65A605;
+}
+
+.recipes-links li:hover h3 {
+  color: #65A605;
+}
+
+.recipes-links li:hover p {
+  color: #65A605;
+}
+
+.gallery img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: #F6F6F6;
+}
+
+.blog a:hover {
+  color: #999999;
+}
+
+.related-posts a:hover {
+  color: #999999;
+}
+
+.comments-form button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #65A605;
+}
+
+.comments-form button:hover a {
+  color: #65A605;
+}
+
+.contact-form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .social-links a:hover,
+footer a > p:hover {
+  color: #65A605;
+}
+
+footer button:hover {
+  background-color: #F6F6F6;
+}
+
+footer button:hover i {
+  color: #65A605;
 }
