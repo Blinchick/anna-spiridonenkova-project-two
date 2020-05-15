@@ -1,0 +1,113 @@
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+
+footer {
+    background-color: $blacktwo;
+}
+
+footer h2 {
+    color: $green;
+    margin: 0 0 3.5rem;
+    text-align: left;
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0;
+    padding-bottom: 2.5rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', 'sans-serif';
+    margin: 0;
+}
+
+.footer-info div {
+    flex: 0 0 250px;
+}
+
+.footer-info div:nth-of-type(2){
+    flex: 0 0 270px;
+}
+
+.footer-info div:nth-of-type(3) {
+    flex: 0 0 240px;
+}
+
+.footer-info h3 {
+    color: $white;
+    margin-bottom: 4rem;
+}
+
+.footer-info p {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.footer-info .no-border {
+    border-bottom: none;
+}
+
+footer form {
+    display: flex;
+    padding: 1rem 0 2rem;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);;
+}
+
+footer label {
+    display: none;
+}
+
+footer input[type="email"] {
+    flex: 0 0 80%;
+    height: 4rem;
+    background-color: rgba(153, 153, 153, 0.3);
+    border: none;
+    padding: 1rem;
+    font-family: 'Lora', 'sans-serif';
+    font-size: 1.3rem;
+    color: $grey;
+}
+
+footer input[type="email"]:focus {
+    border: 1px solid $green;
+}
+
+footer button {
+    flex: 0 0 20%;
+    border: none;
+    background-color: $green;
+}
+
+button .fas {
+    font-size: 22px;
+}
+
+.social-links ul {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.social-links li {
+    flex: 0 0 15%;
+    font-size: 17px;
+    color: $white;
+    padding: 1rem 0;
+}
+
+.copyright {
+    background-color: $black;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.copyright a {
+    color: $green;
+}
+
+.footer-blog .footer-info .no-border:nth-child(2n),
+.footer-blog .footer-info .social-links {
+    visibility: hidden;
+}

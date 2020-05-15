@@ -506,6 +506,10 @@ footer input[type="email"] {
   color: #999999;
 }
 
+footer input[type="email"]:focus {
+  border: 1px solid #65A605;
+}
+
 footer button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 20%;
@@ -1020,6 +1024,9 @@ blockquote:after {
   height: 5rem;
   padding-left: 1rem;
   border-color: rgba(153, 153, 153, 0.3);
+  font-family: 'Lora', 'sans-serif';
+  font-size: 1.3rem;
+  color: #999999;
 }
 
 .comments-form textarea {
@@ -1032,6 +1039,14 @@ blockquote:after {
   resize: none;
   padding: 2rem 1rem;
   border-color: rgba(153, 153, 153, 0.3);
+  font-family: 'Lora', 'sans-serif';
+  font-size: 1.3rem;
+  color: #999999;
+}
+
+.comments-form input:focus,
+.comments-form textarea:focus {
+  border: 2px solid #65A605;
 }
 
 .comments-form ::-webkit-input-placeholder {
@@ -1120,6 +1135,9 @@ blockquote:after {
   padding: 2rem 1rem;
   background-color: #F6F6F6;
   border: none;
+  font-family: 'Lora', 'sans-serif';
+  font-size: 1.3rem;
+  color: #999999;
 }
 
 .contact-form input[class="subject"] {
@@ -1139,30 +1157,9 @@ blockquote:after {
   padding: 2rem 1rem;
   background-color: #F6F6F6;
   border: none;
-}
-
-.contact-form ::-webkit-input-placeholder {
-  color: #999999;
-  font-size: 1.6rem;
   font-family: 'Lora', 'sans-serif';
-}
-
-.contact-form :-ms-input-placeholder {
+  font-size: 1.3rem;
   color: #999999;
-  font-size: 1.6rem;
-  font-family: 'Lora', 'sans-serif';
-}
-
-.contact-form ::-ms-input-placeholder {
-  color: #999999;
-  font-size: 1.6rem;
-  font-family: 'Lora', 'sans-serif';
-}
-
-.contact-form ::placeholder {
-  color: #999999;
-  font-size: 1.6rem;
-  font-family: 'Lora', 'sans-serif';
 }
 
 .contact-form button {

@@ -1,0 +1,235 @@
+// section with blog post
+
+.blog {
+    margin: 20rem 0 5rem;
+}
+
+.blog p,
+.personal p,
+.related-posts p,
+.comments p {
+    font-size: 1.4rem;
+}
+
+.blog h2 {
+    text-align: left;
+    border-bottom: none;
+    font-size: 32px;
+    margin: 0;
+}
+
+.blog h2 + p{
+    color: $black;
+    margin: 0 0 4rem;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.blog article p {
+    margin-bottom: 3rem;
+}
+
+.blog div {
+    border-top: 1px solid rgba(153, 153, 153, 0.3);
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+    padding: 2rem 0;
+}
+
+.blog nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.blog nav p {
+    color: $black;
+}
+
+.blog nav:first-child li {
+    display: inline-block;
+    padding: 0 0.1rem;
+}
+
+.blog nav:last-child li {
+    display: inline-block;
+}
+
+.blog a {
+    color: rgba(153, 153, 153, 0.6);
+    font-size: 1.5rem;
+}
+
+.blog nav:last-child a {
+    padding: 0 1rem;
+}
+
+
+// section with personal info starts here
+
+.personal {
+    display: flex;
+    align-items: center;
+    flex: 1 1 100%;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.personal figure {
+    flex: 1 1 15%;
+    margin-right: 3rem;
+}
+
+.personal article {
+    flex: 1 1 calc(85% - 3rem);
+    padding: 4.3rem;
+    background-color: $white;
+}
+
+.personal p {
+    padding-top: 1rem;
+}
+
+// section with related posts
+
+.related-posts h4 {
+    padding: 4rem 0 4rem;
+    color: $blacktwo;
+}
+
+.related-posts-all {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.related-posts h3 {
+    margin: 4rem 0 0;
+    font-size: 2rem;
+}
+
+.related-posts p {
+    color: rgba(153, 153, 153, 0.6);
+}
+
+.related-posts a {
+    color: $black;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+// section with comments start here
+
+.comments div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.comments figure {
+    flex: 0 0 7%;
+}
+
+.comments article {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 90%;
+    position: relative;
+    background-color: $white;
+    padding: 1rem 2rem;
+}
+
+.comments article p {
+    color: $black;
+    font-size: 1.3rem;
+}
+
+.comments-name,
+.date {
+    font-weight: bold;
+    color: $blacktwo;
+}
+
+.comments-name {
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+.tip {
+    top: 20px;
+    left: -20px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid $white;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;  
+}
+
+// section with form starts here
+
+.comments-form {
+    margin: 4rem 0 20rem;
+}
+
+.comments-form p {
+    font-family: 'Lora', 'sans-serif';
+    font-style: italic;;
+    padding-bottom: 1rem;
+}
+
+.comments-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0 0;
+    padding: 0;
+}
+
+.comments-form input[class="name"],
+.comments-form input[class="email"],
+.comments-form input[class="website"] {
+    flex: 0 0 32%;
+    height: 5rem;
+    padding-left: 1rem;
+    border-color: rgba(153, 153, 153, 0.3);
+    font-family: 'Lora', 'sans-serif';
+    font-size: 1.3rem;
+    color: $grey;
+}
+
+.comments-form textarea {
+    margin: 1rem 0;
+    flex: 0 0 100%;
+    resize: vertical;
+    min-width: 100%;
+    resize: none;
+    padding: 2rem 1rem;
+    border-color: rgba(153, 153, 153, 0.3);
+    font-family: 'Lora', 'sans-serif';
+    font-size: 1.3rem;
+    color: $grey;
+}
+
+.comments-form input:focus,
+.comments-form textarea:focus {
+    border: 2px solid $green;
+}
+
+.comments-form ::placeholder {
+    color: $grey;
+    font-size: 1.6rem;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.comments-form button {
+    background-color: $green;
+    border: none;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+}

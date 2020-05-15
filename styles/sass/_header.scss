@@ -1,0 +1,67 @@
+header {
+    background-image: url(../styles/delicious-assets/home-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.header-blog {
+    background-image: url(../styles/delicious-assets/blog-1.jpeg);
+    height: 50vh;
+}
+
+.header-contact {
+    background-image: url(../styles/delicious-assets/contact-1.jpeg);
+    height: 50vh;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header a {
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 1.7rem;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: $blacktwo;
+}
+
+header a.active {
+    color: $green;
+}
+
+.header-circle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-63px, 17px);
+    z-index: 1;
+    color: $green;
+        i {
+            font-size: 20px;
+        }
+            p {
+                transform: translate(6px, -29px);
+                color: $white;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+}
+    
+header label,
+header input{
+    display: none;
+}

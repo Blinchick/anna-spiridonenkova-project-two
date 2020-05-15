@@ -1,0 +1,171 @@
+.recipes {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipes article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.recipes article div {
+    flex: 1 1 50%;
+    padding: 0 12.5rem 5rem;
+}
+
+.recipes article p:nth-of-type(1) {
+    padding: 3rem 0 4rem;
+}
+
+.recipes figure {
+    flex: 1 1 51%;
+    padding: 0;
+}
+
+.recipes-links {
+    display: flex;
+    background-color: #F2F2F2;
+}
+
+.recipes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    padding: 5rem 0;
+}
+
+.recipes li {
+    display: flex;
+    flex: 0 0 43%;
+}
+
+.recipes i {
+    color: #303030;
+    font-size: 36px;
+    margin-right: 2rem;
+}
+
+/* restaurant  section*/
+
+.restaurants {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1 1 100%;
+    padding: 15rem 31rem 2rem;
+}
+
+.seal-pic {
+    height: 150px;
+    width: 150px;
+    transform: translate(184px, -291px);
+    position: absolute;
+    z-index: 1;
+}
+
+.restaurant-pic {
+    margin-bottom: 5rem;
+}
+.restaurant-pic img {
+    width: 400px;
+}
+
+.restaurant-description {
+    text-align: center;
+    flex: 0 0 70%;
+}
+
+.restaurant-description p {
+    padding-top: 2rem;
+    height: 200px;
+}
+/* gallery starts here */
+
+.gallery {
+    display: flex;
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    flex: 1 1 400px;
+    transition: .3s ease-in-out;
+}
+
+/* reviews section starts here */
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDED9A;
+    padding: 15rem 0 10rem;
+}
+
+.reviews-quote {
+    max-width: 1100px;
+}
+
+.reviews h2::after {
+    content: "";
+    display: block; 
+    margin: 0 auto;
+    width: 5%;
+    padding-top: 2rem;
+    border-bottom: 4px solid $green;
+}
+
+.reviews-quote p {
+    font-family: 'Lora', 'serif';
+    font-size: 24px;
+    line-height: 36px;
+    font-style: italic;
+    letter-spacing: 0.6px;
+    color: $black;
+    text-align: center;
+    padding: 2rem 0 4rem;
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote::before,
+blockquote:after {
+    font-family: FontAwesome;
+    position: absolute;
+    top: 13px;
+    color: #ECF9CA;
+    font-size: 46px;
+}
+
+blockquote::before {
+    content: "\f10d";
+    margin-right: 2rem;
+    right: 100%;
+}
+
+blockquote:after {
+    content: "\f10e";
+    margin-left: 2rem;
+    left: 100%;  
+    top: auto;
+    bottom: 13px;
+    transform: translateY(-2.5rem);
+}
+
+.reviews-arrows i {
+    font-size: 36px;
+    padding: 0 2rem;
+    color: #ECF9CA;
+}
