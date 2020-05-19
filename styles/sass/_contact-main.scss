@@ -47,7 +47,6 @@
 .contact-form textarea {
     margin: 2rem 0;
     flex: 0 0 100%;
-    resize: vertical;
     min-width: 100%;
     resize: none;
     padding: 2rem 1rem;
@@ -58,8 +57,13 @@
     color: $grey;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px $green solid;
+}
+
 .contact-form button {
-    background-color: $white;
+    background-color: white;
     border: none;
     a {
         color: $green;

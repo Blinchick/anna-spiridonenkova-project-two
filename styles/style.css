@@ -1151,7 +1151,6 @@ blockquote:after {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-  resize: vertical;
   min-width: 100%;
   resize: none;
   padding: 2rem 1rem;
@@ -1162,8 +1161,13 @@ blockquote:after {
   color: #999999;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px #65A605 solid;
+}
+
 .contact-form button {
-  background-color: #F6F6F6;
+  background-color: white;
   border: none;
 }
 
