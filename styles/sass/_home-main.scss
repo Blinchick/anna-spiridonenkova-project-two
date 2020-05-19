@@ -92,12 +92,11 @@
 
 .gallery {
     display: flex;
-    flex: 1 1 500px;
     flex-wrap: wrap;
 }
 
 .gallery img {
-    flex: 1 1 400px;
+    max-width: 33%;
     transition: .3s ease-in-out;
 }
 

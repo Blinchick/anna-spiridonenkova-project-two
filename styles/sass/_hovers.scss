@@ -8,16 +8,10 @@ header a:hover {
     border: 1px solid $green;
 }
 
-.recipes-links li:hover {
-    i {
+.recipes-links li:hover i,
+.recipes-links li:hover h3,
+.recipes-links li:hover p {
         color: $green;
-    }
-        h3 {
-            color: $green;
-        }
-            p {
-                color: $green;
-            }
 }
 
 .gallery img:hover {
@@ -51,13 +45,11 @@ header a:hover {
 }
 
 footer .social-links a:hover,
-footer a>p:hover {
+footer a>p:hover,
+footer button:hover i {
     color: $green;
 }
 
 footer button:hover {
-    background-color: $white;
-        i {
-            color: $green;
-        }
+    background-color: $white;    
 }
