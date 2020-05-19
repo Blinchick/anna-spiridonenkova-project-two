@@ -98,6 +98,9 @@
 .gallery img {
     max-width: 33%;
     transition: .3s ease-in-out;
+    //for safari
+    height: intrinsic;
+
 }
 
 /* reviews section starts here */
