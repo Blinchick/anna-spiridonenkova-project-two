@@ -283,23 +283,23 @@ img {
   font-size: 1.3rem;
 }
 
-h1 {
+h1, h2, h3 {
   text-transform: uppercase;
   font-family: 'Raleway', 'sans-serif';
+  color: #2E2E2E;
+}
+
+h1 {
   font-size: 46px;
   line-height: 24px;
   letter-spacing: 1.1px;
-  color: #2E2E2E;
 }
 
 h2 {
   margin: 1rem 0;
-  text-transform: uppercase;
-  font-family: 'Raleway', 'sans-serif';
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 0.5px;
-  color: #2E2E2E;
   text-align: center;
 }
 
@@ -314,11 +314,8 @@ h2 {
 }
 
 h3 {
-  color: #2E2E2E;
   margin-top: 0;
   font-size: 1.6rem;
-  text-transform: uppercase;
-  font-family: 'Raleway', 'sans-serif';
 }
 
 h4 {
@@ -1241,14 +1238,14 @@ blockquote:after {
     display: inline-block;
     color: #65A605;
     font-style: normal;
-    font-size: 10rem;
+    font-size: 8rem;
     padding-right: 5rem;
   }
   header ul li {
     display: block;
     border-bottom: 2px solid #65A605;
     font-weight: bold;
-    background-color: rgba(248, 248, 255, 0.5);
+    background-color: rgba(248, 248, 255, 0.2);
   }
   header nav {
     position: relative;
@@ -1379,14 +1376,7 @@ blockquote:after {
 
 @media (max-width: 580px) {
   header h1 {
-    -webkit-writing-mode: sideways-lr;
-        -ms-writing-mode: sideways-lr;
-            writing-mode: sideways-lr;
-    text-orientation: upright;
-  }
-  header nav {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    font-size: 30px;
   }
   .recipes-links {
     -webkit-box-orient: vertical;
