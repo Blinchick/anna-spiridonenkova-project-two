@@ -1229,8 +1229,8 @@ blockquote:after {
 
 @media (max-width: 1200px) {
   .header-circle {
-    -webkit-transform: translate(-97px, 274px);
-            transform: translate(-97px, 274px);
+    -webkit-transform: translate(-87px, 133px);
+            transform: translate(-87px, 133px);
     background-color: transparent;
     border-bottom: none;
   }
